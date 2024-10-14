@@ -135,19 +135,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-function handleClick() {
-    const name = $("#name").val();
-    const email = $("#email").val();
-    const message = $("#message").val();
-    const body = { name, email, message };
-
-    fetch("http://localhost:3000/contact", {
-      method: "POST",
-      body: JSON.stringify(body),
-    }).then((res) => {
-      console.log(res);
-    });
-  }
-</script>
-</body>
-</html>
